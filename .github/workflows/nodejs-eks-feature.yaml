@@ -12,7 +12,7 @@ on:
 
 jobs:
   build-nodejs:
-  runs-on: ubuntu-latest
-  steps:
-  - name: read version
-    run: echo "reading versions"
+    runs-on: ubuntu-latest
+    steps:
+    - name: read version
+      run: echo "reading versions"
