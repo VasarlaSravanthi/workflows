@@ -1,4 +1,4 @@
-name: nodejs eks feature
+name: nodejs eks feature1
 on:
   workflow_call:
     inputs:
