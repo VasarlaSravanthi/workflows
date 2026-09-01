@@ -1,0 +1,25 @@
+name: nodejs eks feature
+on:
+  workflow_call:
+    inputs:
+      project:
+        required: true
+        type: string
+      component:
+        required: true
+        type: string
+env:
+  project: "${{ inputs.project }}"
+  component: "${{ inputs.component }}"
+
+
+jobs:
+  build-nodejs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code check
+        uses: actions/checkout@v7 #like plugins in jenkins
+
+      - name: list files
+        run: |
+          ls -l
